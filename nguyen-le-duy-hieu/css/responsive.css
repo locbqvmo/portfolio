@@ -1,0 +1,62 @@
+@media (max-width: 640px) {
+  section#home {
+    margin-bottom: 2rem;
+  }
+}
+
+@media (min-width: 640px) {
+  .home_section_title-desc {
+    font-size: 3.75rem;
+    line-height: 1;
+  }
+
+  .services_title {
+    font-size: 3.75rem;
+    line-height: 1;
+  }
+
+  .services_desc_wrapper {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .services_desc {
+    padding: 3rem;
+  }
+
+  .services_desc_title {
+    flex-direction: row;
+    align-items: center;
+    gap: 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+
+  .header__wrapper-right ul {
+    display: flex;
+  }
+
+  .button_menu-toggle {
+    display: none;
+  }
+
+  .images_face_wrapper {
+    border-top-right-radius: 0;
+  }
+
+  .images_dot {
+    display: block;
+  }
+  .home_section-hero {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1180px) {
+  .container {
+    max-width: 1180px;
+  }
+}

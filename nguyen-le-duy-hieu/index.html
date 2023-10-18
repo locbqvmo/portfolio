@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <meta name="description" content="Here is personal portfolio">
+    <meta name="robots" content="index, follow" />
+    
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script src="./script.js" defer></script>
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <nav aria-label="primary" class="container" id="header-pc">
+                <div class="header__wrapper">
+                    <div class="header_wrapper-left">
+                        <a href="#">👋</a>
+                    </div>
+
+                    <div class="header__wrapper-right">
+                        <ul>
+                            <a href="#services">Services</a>
+                            <a href="#portfolio">Portfolio</a>
+                            <a href="#testimonials">Testimonials</a>
+                            <a href="#blog">Blog</a>
+                            <a href="#contact" class="button_link-contact">Contact</a>
+                        </ul>
+                        <button class="button_menu-toggle">
+                            <i class="fa-solid fa-bars"></i>
+                        </button>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <header class="header_mobile">
+            <nav aria-label="second" class="container">
+                <div class="header__wrapper">
+                    <div class="header_wrapper-left">
+                        <a href="#">👋</a>
+                    </div>
+
+                    <div class="header__wrapper-right">
+                        <button class="button_menu-toggle" style="background-color: transparent;">
+                            <i class="fa-solid fa-xmark"></i>
+                        </button>
+                    </div>
+                </div>
+            </nav>
+            <nav class="header_nav-mobile">
+                <a href="#services">Services</a>
+                <a href="#portfolio">Portfolio</a>
+                <a href="#testimonials">Testimonials</a>
+                <a href="#blog">Blog</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </header>
+        
+
+        <main>
+            <section id="home">
+                <div class="container home_section-hero">
+                    <div>
+                        <h5 class="home_section_title">
+                            <img src="./images/aim.png" alt="web dev">
+                            <p>Web Developer</p>
+                        </h5>
+                        <h2 class="home_section_title-desc">
+                            I Build Custom 
+                            <span>Website Solutions</span> 
+                            That Help Your
+                            <span>Business Grow</span> 
+                        </h2>
+                        <p>I help you increase conversion and performance in every possible way.</p>
+
+                        <ul class="home_section_title-button">
+                            <a href="#portfolio" class="home_section_title-button-1">See my work</a>
+                            <a href="" class="home_section_title-button-2">Hire me</a>
+                        </ul>
+                    </div>
+
+                    <div style="position: relative;">
+                        <picture>
+                            <img src="https://d33wubrfki0l68.cloudfront.net/42b55b52cc435b03f1437a0fa12f87f0fc01daf4/0f7ea/assets/site/purple-dots.svg" alt="decoration dots" class="images_dot">
+                        </picture>
+                        <div class="images_face_wrapper">
+                            <picture>
+                                <img src="./images/face.png" alt="Face" class="images_face">
+                            </picture>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="services" class="container">
+                <h2 class="services_title">My Services</h2>
+                <div class="services_desc_wrapper">
+                    <article class="services_desc">
+                        <div class="services_desc_title">
+                            <div class="services_desc_title-icon">
+                                <img src="https://d33wubrfki0l68.cloudfront.net/5cb8d43b8b1aa9f101e03eb8ee60256b5b692011/77ecf/assets/site/dev.svg" 
+                                alt="web dev" style="width: 2rem;">
+                            </div>
+                            <h3>Web Design & Development</h3>
+                        </div>
+                        <p>
+                            <b style="color: #130f49;">I don't just design websites.</b> 
+                            I build high-performing, beautiful websites that are conversion-focused, brand-accurate, and user-friendly.
+                        </p>
+                    </article>
+                    <article class="services_desc">
+                        <div class="services_desc_title">
+                            <div class="services_desc_title-icon" style="background-color: #fff4e4;">
+                                <img src="https://d33wubrfki0l68.cloudfront.net/0de1524cc6e6e00d74033964afe06f6abbf535b9/8eebf/assets/site/seo.svg" 
+                                alt="web dev" style="width: 2rem;">
+                            </div>
+                            <h3>SEO</h3>
+                        </div>
+                        <p>
+                            <b style="color: #130f49;">A greater audience.</b> 
+                            A high converting website won't be effective if no one visits it. Ranking on Google is essential to getting new clients in the door.
+                        </p>
+                    </article>
+                    <article class="services_desc">
+                        <div class="services_desc_title">
+                            <div class="services_desc_title-icon" style="background-color: #fff5f6;">
+                                <img src="https://d33wubrfki0l68.cloudfront.net/7d53e157b675f7fa9bc5b7ba168893353dbcf633/03f20/assets/site/branding.svg" 
+                                alt="web dev" style="width: 2rem;">
+                            </div>
+                            <h3>Databases</h3>
+                        </div>
+                        <p>
+                            <b style="color: #130f49;">Catch your data.</b> 
+                            In addition to web services, I can produce and design resources for both storing and maintaining data.
+                        </p>
+                    </article>
+                    <article class="services_desc">
+                        <div class="services_desc_title">
+                            <div class="services_desc_title-icon" style="background-color: #f4f3ff;">
+                                <img src="https://d33wubrfki0l68.cloudfront.net/fc1f13a6bd0db94af77699d93cf6c1a2e6b42a69/00a1e/assets/site/photo.svg" 
+                                alt="web dev" style="width: 2rem;">
+                            </div>
+                            <h3>Photo & Video</h3>
+                        </div>
+                        <p>
+                            <b style="color: #130f49;">Show, don't tell.</b> 
+                            Photos and videos are effective at telling the story of who you are and what you do, establishing trust, and building relationships with potential customers.                        </p>
+                    </article>
+                </div>
+            </section>
+
+            <section id="portfolio" style="position: relative;">
+                <div class="portfolio_background"></div>
+                <div class="container">
+                    <h3 class="portfolio_subtitle">Portfolio</h3>
+                    <h2 class="portfolio_title">Recent Work</h2>
+
+                    <div class="portfolio_main_wrapper">
+                        
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
