@@ -18,6 +18,22 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+.flex {
+  display: flex;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.gap-4 {
+  gap: 16px;
+}
+
 header {
   padding-top: 2rem;
 }
@@ -142,5 +158,48 @@ h3 {
   .state .icon {
     width: 2rem;
     height: 2rem;
+  }
+}
+
+footer {
+  padding-top: 2rem;
+}
+
+footer .ri-shining-fill {
+  animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
+}
+footer h4,
+footer .ri-shining-fill {
+  font-size: 1.5rem;
+}
+
+.social-icon {
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 9999px;
+  transition: all 0.3s;
+}
+
+.pt-2 {
+  padding: 0.5rem;
+}
+
+.social-icon:hover {
+  background: #000;
+  color: white;
+}
+
+.social-icon i {
+}
+
+@keyframes ping {
+  75%,
+  100% {
+    transform: scale(2);
+    opacity: 0;
   }
 }
