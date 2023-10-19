@@ -5,15 +5,16 @@ body {
     margin: 0;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    /* background-image: linear-gradient(to bottom right, #F02FC2, #6094EA); */
-    background-color: #ca3fa9;
-    animation: background_gradient 5s linear 0s infinite none;
+    background-image: linear-gradient(to right, #F02FC2, #8144fc, #458cff);
+    background-size: 400%, 400%;
+    animation: background_gradient 6s linear 0s infinite none;
 }
 
 @keyframes background_gradient {
-    0% {background-color: #ca3fa9;}
-    50% {background-color: #6094EA;}
-    100% {background-color: #ca3fa9;}
+    0% {background-position: 0%, 50%;}
+    33.3% {background-position: 50%, 100%;}
+    66.7% {background-position: 100%, 0%;}
+    100% {background-position: 0%, 50%;}
 }
 
 .container {
@@ -41,38 +42,135 @@ body {
 h1 {
     font-size: 65px;
     font-family: 'Noto Sans NKo Unjoined', sans-serif;
-    color: #544E61;
+    color: rgb(169, 255, 242);
     margin-bottom: 0;
 }
 
 h2 {
     font-size: 45px;
     font-family: 'Noto Sans NKo Unjoined', sans-serif;
-    color: #544E61;
+    color: rgb(169, 255, 242);
 }
 
 .name, .profession {
     color: #FDE8E9;
 }
 
-.divider {
+/* Projects */
+
+.projects {
+    margin: 0 5%;
+}
+
+.projects h2, p {
+    text-align: center;
+    color: #d0c3c4;
+    font-family: 'Noto Sans NKo Unjoined', sans-serif;
+    margin-bottom: 0px;
     display: flex;
     justify-content: center;
 }
 
-h3 {
-    text-align: center;
-    width: 65%; 
-    border-bottom: 1px solid #544E61; 
-    line-height: 0.1em;
-    margin: 10px 0 20px; 
+.projects-container {
+    width: 90%;
+    padding: 5%;
 }
 
-h3 span {
+.project {
+    border-bottom: 1px solid #6e6e6e;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 40% 20% 40%;
+    padding: 16px 0;
+}
+
+.project-date {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    text-transform: uppercase;
+    font-size: small;
+    color: rgb(161, 194, 240);
+}
+
+.project-info {
+    text-align: center;
+}
+
+.project-info p {
+    margin: 8px;
+}
+
+.project:nth-child(even) .project-info {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+
+.project:last-child {
+    border: none;
+}
+
+.project-name {
+    font-size: 26px;
     font-family: 'Noto Sans NKo Unjoined', sans-serif;
-    color: #FDE8E9;
-    padding:0 10px;
-    animation: background_gradient 5s linear 0s infinite none;
+    color: #f7f2f3;
+    margin: 0;
+}
+
+.project-link {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+}
+
+.project-link img {
+    width: 14px;
+    height: 14px;
+    margin: auto 0 auto 8px;
+    filter: invert(86%) sepia(6%) saturate(83%) hue-rotate(300deg) brightness(112%) contrast(96%);
+}
+
+.project-responsibility {
+    opacity: .7;
+}
+
+.project-description {
+    font-size: 12px;
+    color: #a6eff9;
+    align-self: stretch;
+}
+
+.tech-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    list-style-type: none;
+    padding: 0;
+}
+
+.tech {
+    padding: 4px 12px;
+    border-radius: 12px;
+    color: rgb(169, 255, 242);
+    background-color: rgba(45, 212, 190, 0.519);
+    font-family: 'Noto Sans NKo Unjoined', sans-serif;
+    font-size: 12px;
+}
+
+/* Footer */
+
+.divider {
+    margin: 20px auto;
+    width: 65%; 
+    border-bottom: 1px solid #FDE8E9; 
+}
+
+footer {
+    padding: 20px 0 50px 0;
 }
 
 .social-buttons-container {
@@ -83,26 +181,26 @@ h3 span {
 }
 
 .fa {
-    padding: 20px;
+    padding: 5px;
     font-size: 30px;
     width: 18px;
     height: 18px;
     text-align: center;
     text-decoration: none;
-    margin: 5px 30px;
-    border-radius: 50%;
-    color: #544E61;
-    background-color: #A7E2E3;
+    margin: 5px 15px;
+    border-radius: 5px;
+    color: rgb(169, 255, 242);
+    background-color: rgba(45, 212, 190, 0.519);
 }
 
 .fa-facebook:hover {
-    animation: facebook-animation .4s linear 0s forwards;
+    animation: facebook-animation .2s linear 0s forwards;
 }
 
 @keyframes facebook-animation {
     from {
-        color: #544E61;
-        background: #A7E2E3;
+        color: rgb(169, 255, 242);
+        background: rgba(45, 212, 190, 0.519);
     }
     to {
         background: #3B5998;
@@ -111,13 +209,13 @@ h3 span {
 }
 
 .fa-google:hover {
-    animation: google-animation .4s linear 0s forwards;
+    animation: google-animation .2s linear 0s forwards;
 }
 
 @keyframes google-animation {
     from {
-        color: #544E61;
-        background: #A7E2E3;
+        color: rgb(169, 255, 242);
+        background: rgba(45, 212, 190, 0.519);
     }
     to {
         background: #dd4b39;
@@ -126,13 +224,13 @@ h3 span {
 }
 
 .fa-linkedin:hover {
-    animation: linkedin-animation .4s linear 0s forwards;
+    animation: linkedin-animation .2s linear 0s forwards;
 }
 
 @keyframes linkedin-animation {
     from {
-        color: #544E61;
-        background: #A7E2E3;
+        color: rgb(169, 255, 242);
+        background: rgba(45, 212, 190, 0.519);
     }
     to {
         background: #007bb5;
@@ -140,23 +238,36 @@ h3 span {
     }
 }
 
-.fa-youtube:hover {
-    animation: youtube-animation .4s linear 0s forwards;
+.fa-github:hover {
+    animation: github-animation .2s linear 0s forwards;
 }
 
-@keyframes youtube-animation {
+@keyframes github-animation {
     from {
-        color: #544E61;
-        background: #A7E2E3;
+        color: rgb(169, 255, 242);
+        background: rgba(45, 212, 190, 0.519);
     }
     to {
-        background: #bb0000;
+        background: rgb(26, 26, 26);
         color: white;
     }
 }
 
 /* Tablet */
 @media only screen and (max-width: 992px) {
+
+    .container {
+        display: block;
+    }
+
+    .greeting {
+        width: 90%;
+    }
+
+    .intro {
+        width: 90%;
+    }
+
     .intro-content {
         font-size: 20px;
         font-family: 'Noto Sans NKo Unjoined', sans-serif;
@@ -166,14 +277,14 @@ h3 span {
     h1 {
         font-size: 55px;
         font-family: 'Noto Sans NKo Unjoined', sans-serif;
-        color: #544E61;
+        color: rgb(169, 255, 242);
         margin-bottom: 0;
     }
     
     h2 {
         font-size: 38px;
         font-family: 'Noto Sans NKo Unjoined', sans-serif;
-        color: #544E61;
+        color: rgb(169, 255, 242);
     }
 
     h3 {
@@ -198,14 +309,14 @@ h3 span {
     h1 {
         font-size: 45px;
         font-family: 'Noto Sans NKo Unjoined', sans-serif;
-        color: #544E61;
+        color: rgb(169, 255, 242);
         margin-bottom: 0;
     }
     
     h2 {
         font-size: 28px;
         font-family: 'Noto Sans NKo Unjoined', sans-serif;
-        color: #544E61;
+        color: rgb(169, 255, 242);
     }
 
     .container {
@@ -226,14 +337,12 @@ h3 span {
     }
 
     .social-buttons-container {
-        width: 60%;
-        display: block;
+        width: 80%;
     }
 
     .double-button-container {
         display: flex;
-        justify-content: space-between;
-        margin-bottom: 20px;
+        justify-content: center;
     }
 
     .fa {
