@@ -5,7 +5,8 @@ body {
     margin: 0;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-image: linear-gradient(to right, #F02FC2, #8144fc, #458cff);
+    /* background-image: linear-gradient(to right, #F02FC2, #8144fc, #458cff); */
+    background-image: linear-gradient(to right, #000000, #1c2e35, #0b4a4f);
     background-size: 400%, 400%;
     animation: background_gradient 6s linear 0s infinite none;
 }
