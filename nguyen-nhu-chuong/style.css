@@ -119,6 +119,7 @@ h2 {
     font-family: 'Noto Sans NKo Unjoined', sans-serif;
     color: #f7f2f3;
     margin: 0;
+    width: inherit;
 }
 
 .project-link {
@@ -263,6 +264,7 @@ footer {
 
     .greeting {
         width: 90%;
+        text-align: center;
     }
 
     .intro {
@@ -291,6 +293,27 @@ footer {
     h3 {
         width: 80%;
         font-size: 15px;
+    }
+
+    .project-date {
+        grid-row-start: 1;
+        grid-row-end: 2;
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+
+    .project-info {
+        grid-row-start: 1;
+        grid-row-end: 2;
+        grid-column-start: 2;
+        grid-column-end: 4;
+    }
+
+    .project:nth-child(even) .project-info {
+        grid-row-start: 1;
+        grid-row-end: 2;
+        grid-column-start: 2;
+        grid-column-end: 4;
     }
 
     .social-buttons-container {
@@ -335,6 +358,11 @@ footer {
     h3 {
         width: 90%; 
         font-size: 12px;
+    }
+
+    .project {
+        display: flex;
+        flex-direction: column;
     }
 
     .social-buttons-container {
