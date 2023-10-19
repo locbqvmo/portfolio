@@ -126,6 +126,131 @@ h3 {
   }
 }
 
+footer,
+#portfolio,
+#skill {
+  padding-top: 2rem;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+footer .ri-shining-fill {
+  animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
+}
+footer .ri-shining-fill {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 2rem;
+}
+
+.social-icon {
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 9999px;
+  transition: all 0.3s;
+}
+
+.pt-2 {
+  padding-top: 0.5rem;
+}
+
+.pb-2 {
+  padding-bottom: 0.5rem;
+}
+
+.portfolio-list {
+  padding-top: 0.25rem;
+  flex-wrap: wrap;
+  gap: 2%;
+}
+
+.portfolio-item {
+  flex-direction: column;
+  background: #f5f5f5;
+  padding: 1rem;
+  width: 48%;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.portfolio-item .year {
+  background: white;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.5rem;
+}
+
+.portfolio-link {
+  text-decoration: none;
+}
+.skill-list {
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+#skill h6 {
+  font-size: 1.25rem;
+}
+
+.skill-item {
+  padding: 0.5rem 1rem;
+  border-radius: 9999px;
+  border: 1px solid black;
+  transition: all 0.3s;
+}
+
+.skill-item:hover {
+  background: black;
+  color: white;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.text-sm {
+  font-size: 14px;
+  color: #4b4b4b;
+  transition: all 0.3s;
+}
+
+.text-sm:hover {
+  color: black;
+}
+
+h5 {
+  font-size: 1.25rem;
+}
+
+.social-icon:hover {
+  background: #000;
+  color: white;
+}
+
+.social-icon i {
+}
+
+@keyframes ping {
+  75%,
+  100% {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+
 /* ========= RESPONSIVE ========= */
 @media screen and (max-width: 700px) {
   h3 {
@@ -161,45 +286,8 @@ h3 {
   }
 }
 
-footer {
-  padding-top: 2rem;
-}
-
-footer .ri-shining-fill {
-  animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
-}
-footer h4,
-footer .ri-shining-fill {
-  font-size: 1.5rem;
-}
-
-.social-icon {
-  border: 1px solid black;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 2.5rem;
-  height: 2.5rem;
-  border-radius: 9999px;
-  transition: all 0.3s;
-}
-
-.pt-2 {
-  padding: 0.5rem;
-}
-
-.social-icon:hover {
-  background: #000;
-  color: white;
-}
-
-.social-icon i {
-}
-
-@keyframes ping {
-  75%,
-  100% {
-    transform: scale(2);
-    opacity: 0;
+@media screen and (max-width: 1000px) {
+  .portfolio-item {
+    width: 100%;
   }
 }
