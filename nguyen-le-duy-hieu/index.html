@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <meta name="description" content="Here is personal portfolio">
+    <meta name="robots" content="index, follow" />
+    
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script src="./script.js" defer></script>
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <nav aria-label="primary" class="container" id="header-pc">
+                <div class="header__wrapper">
+                    <div class="header_wrapper-left">
+                        <a href="#">👋</a>
+                    </div>
+
+                    <div class="header__wrapper-right">
+                        <ul>
+                            <a href="#services">Services</a>
+                            <a href="#portfolio">Portfolio</a>
+                            <a href="#testimonials">Testimonials</a>
+                            <a href="#blog">Blog</a>
+                            <a href="#contact" class="button_link-contact box-shadow">Contact</a>
+                        </ul>
+                        <button class="button_menu-toggle">
+                            <i class="fa-solid fa-bars"></i>
+                        </button>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <header class="header_mobile">
+            <nav aria-label="second" class="container">
+                <div class="header__wrapper">
+                    <div class="header_wrapper-left">
+                        <a href="#">👋</a>
+                    </div>
+
+                    <div class="header__wrapper-right">
+                        <button class="button_menu-toggle" style="background-color: transparent;">
+                            <i class="fa-solid fa-xmark"></i>
+                        </button>
+                    </div>
+                </div>
+            </nav>
+            <nav class="header_nav-mobile">
+                <a href="#services">Services</a>
+                <a href="#portfolio">Portfolio</a>
+                <a href="#testimonials">Testimonials</a>
+                <a href="#blog">Blog</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </header>
+        
+
+        <main>
+            <section id="home">
+                <div class="container home_section-hero">
+                    <div>
+                        <h5 class="home_section_title">
+                            <img src="./images/aim.png" alt="web dev">
+                        </h5>
+                        <h2 class="section_title">
+                            I Build Custom 
+                            <span>Website Solutions</span> 
+                            That Help Your
+                            <span>Business Grow</span> 
+                        </h2>
+                        <p>I help you increase conversion and performance in every possible way.</p>
+
+                        <ul class="home_section_title-button">
+                            <a href="#portfolio" class="home_section_title-button-1 box-shadow">See my work</a>
+                            <a href="mailto:hieuproxd123456@gmail.com" class="home_section_title-button-2 box-shadow">Hire me</a>
+                        </ul>
+                    </div>
+
+                    <div style="position: relative;">
+                        <picture>
+                            <img src="https://d33wubrfki0l68.cloudfront.net/42b55b52cc435b03f1437a0fa12f87f0fc01daf4/0f7ea/assets/site/purple-dots.svg" alt="decoration dots" class="images_dot">
+                        </picture>
+                        <div class="images_face_wrapper">
+                            <picture>
+                                <img src="./images/face.png" alt="Face" class="images_face" style="filter: saturate(90%);">
+                            </picture>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="services" class="container" style="padding-top: 4rem !important; padding-bottom: 4rem !important;">
+                <h2 class="services_title section_title">My Services</h2>
+                <div class="services_desc_wrapper">
+                    <article class="services_desc shadow">
+                        <div class="services_desc_title">
+                            <div class="services_desc_title-icon">
+                                <img src="https://d33wubrfki0l68.cloudfront.net/5cb8d43b8b1aa9f101e03eb8ee60256b5b692011/77ecf/assets/site/dev.svg" 
+                                alt="web dev" style="width: 2rem;">
+                            </div>
+                            <h3>Web Design & Development</h3>
+                        </div>
+                        <p>
+                            <b style="color: #130f49;">I don't just design websites.</b> 
+                            I build high-performing, beautiful websites that are conversion-focused, brand-accurate, and user-friendly.
+                        </p>
+                    </article>
+                    <article class="services_desc shadow">
+                        <div class="services_desc_title">
+                            <div class="services_desc_title-icon" style="background-color: #fff4e4;">
+                                <img src="https://d33wubrfki0l68.cloudfront.net/0de1524cc6e6e00d74033964afe06f6abbf535b9/8eebf/assets/site/seo.svg" 
+                                alt="web dev" style="width: 2rem;">
+                            </div>
+                            <h3>SEO</h3>
+                        </div>
+                        <p>
+                            <b style="color: #130f49;">A greater audience.</b> 
+                            A high converting website won't be effective if no one visits it. Ranking on Google is essential to getting new clients in the door.
+                        </p>
+                    </article>
+                    <article class="services_desc shadow">
+                        <div class="services_desc_title">
+                            <div class="services_desc_title-icon" style="background-color: #fff5f6;">
+                                <img src="https://d33wubrfki0l68.cloudfront.net/7d53e157b675f7fa9bc5b7ba168893353dbcf633/03f20/assets/site/branding.svg" 
+                                alt="web dev" style="width: 2rem;">
+                            </div>
+                            <h3>Databases</h3>
+                        </div>
+                        <p>
+                            <b style="color: #130f49;">Catch your data.</b> 
+                            In addition to web services, I can produce and design resources for both storing and maintaining data.
+                        </p>
+                    </article>
+                    <article class="services_desc shadow">
+                        <div class="services_desc_title">
+                            <div class="services_desc_title-icon" style="background-color: #f4f3ff;">
+                                <img src="https://d33wubrfki0l68.cloudfront.net/fc1f13a6bd0db94af77699d93cf6c1a2e6b42a69/00a1e/assets/site/photo.svg" 
+                                alt="web dev" style="width: 2rem;">
+                            </div>
+                            <h3>Photo & Video</h3>
+                        </div>
+                        <p>
+                            <b style="color: #130f49;">Show, don't tell.</b> 
+                            Photos and videos are effective at telling the story of who you are and what you do, establishing trust, and building relationships with potential customers.                        </p>
+                    </article>
+                </div>
+            </section>
+
+            <section id="portfolio" style="position: relative; padding-top: 6rem; padding-bottom: 4rem;">
+                <div class="portfolio_background"></div>
+                <div class="container">
+                    <h3 class="section_subtitle">Portfolio</h3>
+                    <h2 class="section_title">Recent Work</h2>
+
+                    <div class="portfolio_main_wrapper">
+                        <a href="https://flintls.com/" target="_blank">
+                            <img src="https://d33wubrfki0l68.cloudfront.net/85a4ffaa0e5386da5fe9963ff8aeb0c126e9b143/bb399/img/containers/assets/work/flintls.png/e11551274de007f0b9233e3454c18417.webp" 
+                            alt="project 1">
+                            <div class="portfolio_main_link_wrapper">
+                                <div class="portfolio_main_link_background"></div>
+                                <div class="portfolio_main_link_title">
+                                    <picture>
+                                        <img src="https://d33wubrfki0l68.cloudfront.net/621fc099b299fce91c2b699d7f08a6e620e38917/d6b3b/assets/site/open.svg" 
+                                        alt="link to project">
+                                    </picture>
+                                    <p>flintls.com</p>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="https://canada1carsales.ca/" target="_blank">
+                            <img src="https://d33wubrfki0l68.cloudfront.net/1cfdb284731762d7f3edc12abb3b3ef9c9f2f4b2/787ad/img/containers/assets/work/canada1.png/1f063db7c28f6edf92469fedabca9916.webp" 
+                            alt="project 2">
+                            <div class="portfolio_main_link_wrapper">
+                                <div class="portfolio_main_link_background"></div>
+                                <div class="portfolio_main_link_title">
+                                    <picture>
+                                        <img src="https://d33wubrfki0l68.cloudfront.net/621fc099b299fce91c2b699d7f08a6e620e38917/d6b3b/assets/site/open.svg" 
+                                        alt="link to project">
+                                    </picture>
+                                    <p>canada1carsales.ca</p>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="https://latherandsteel.ca/" target="_blank">
+                            <img src="https://d33wubrfki0l68.cloudfront.net/936fd5f44b5790d6cb5c8c99a813f178d58b54a6/af290/img/containers/assets/work/latherandsteel.png/a849aff1c83ebb2c0f5ffbc48d36f9dc.webp" 
+                            alt="project 3">
+                            <div class="portfolio_main_link_wrapper">
+                                <div class="portfolio_main_link_background"></div>
+                                <div class="portfolio_main_link_title">
+                                    <picture>
+                                        <img src="https://d33wubrfki0l68.cloudfront.net/621fc099b299fce91c2b699d7f08a6e620e38917/d6b3b/assets/site/open.svg" 
+                                        alt="link to project">
+                                    </picture>
+                                    <p>latherandsteel.ca</p>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="https://everysquareinch.ca/" target="_blank">
+                            <img src="https://d33wubrfki0l68.cloudfront.net/45d580d3e6d60e1a3b2fac2b830975a2479969ea/d5ca2/img/containers/assets/work/esi.png/8607644dc2ec2a0b3d5e3ed7b8e366f1.webp" 
+                            alt="project 4">
+                            <div class="portfolio_main_link_wrapper">
+                                <div class="portfolio_main_link_background"></div>
+                                <div class="portfolio_main_link_title">
+                                    <picture>
+                                        <img src="https://d33wubrfki0l68.cloudfront.net/621fc099b299fce91c2b699d7f08a6e620e38917/d6b3b/assets/site/open.svg" 
+                                        alt="link to project">
+                                    </picture>
+                                    <p>everysquareinch.ca</p>
+                                </div>
+                            </div>
+                        </a>
+
+                        <article>
+                            <img src="https://d33wubrfki0l68.cloudfront.net/41398a35e6c418d5c3a6ca91f7ac0b49acaf1a6b/7ec6d/img/containers/assets/work/yourproject.png/d0fd71091c8ef6c437cb4d39a252646c.webp" 
+                            alt="start project">
+                            <div class="portfolio_main_button_wrapper">
+                                <h5>Your website here</h5>
+                                <button class="box-shadow">
+                                    <a href="mailto:hieuproxd123456@gmail.com">Start a project</a>
+                                </button>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <section id="process" class="container" style="padding-top: 6rem !important; padding-bottom: 4rem !important;">
+                <div class="process_wrapper">
+                    <div class="process_wrapper_left">
+                        <h3 class="section_subtitle">Methodology</h3>
+                        <h2 class="section_title">My Process</h2>
+                    </div>
+                    <div class="process_wrapper_right">
+                        <article class="process_desc shadow">
+                            <div class="process_desc_subtitle">
+                                <span class="process_desc_subtitle_icon"></span>
+                                <p>Phase 1</p>
+                            </div>
+                            <h4>Discovery</h4>
+                            <p style="color: #55527c;">
+                                This is the phase where I dive deep into your world and get to know you. Before I can properly design your high-performing website, I need to understand you, your pain-points, and your audience.
+                            </p>
+                        </article>
+                        <article class="process_desc shadow">
+                            <div class="process_desc_subtitle">
+                                <span class="process_desc_subtitle_icon" style="background-color: #e7a741;"></span>
+                                <p style="color: #e7a741;">Phase 2</p>
+                            </div>
+                            <h4>Design</h4>
+                            <p style="color: #55527c;">
+                                I take what I’ve learned about you & craft a bespoke website that’s tailored to meet your unique needs, all while accurately representing your brand & keeping things aesthetically pleasing & useable for your audience.                            
+                            </p>
+                        </article>
+                        <article class="process_desc shadow">
+                            <div class="process_desc_subtitle">
+                                <span class="process_desc_subtitle_icon" style="background-color: #d74848;"></span>
+                                <p style="color: #d74848;">Phase 3</p>
+                            </div>
+                            <h4>Build</h4>
+                            <p style="color: #55527c;">
+                                Once you’re happy with the designs, I will proceed to building them making sure everything is optimised to follow modern web practices, such as speed, security and reliability.                            
+                            </p>
+                        </article>
+                        <article class="process_desc shadow">
+                            <div class="process_desc_subtitle">
+                                <span class="process_desc_subtitle_icon" style="background-color: #352bc1;"></span>
+                                <p style="color: #352bc1;">Phase 4</p>
+                            </div>
+                            <h4>Launch</h4>
+                            <p style="color: #55527c;">
+                                After I’ve completed the build and double checked everything alongside your approval, it’s time to launch your website. In this phase I will also provide some training videos on how you can add content to your website so you can do it yourself.                            
+                            </p>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <section id="testimonials" class="testimonials">
+                <div class="container">
+                    <h3 class="section_subtitle" style="text-align: center;">Reviews</h3>
+                    <h2 class="section_title" style="margin-bottom: 6rem; text-align: center;">Customer Testimonials</h2>
+                    
+                    <div class="testimonials_main">
+                        <article class="testimonials_items">
+                            <picture>
+                                <img src="./images/customer1.png" alt="customer 1">
+                            </picture>
+                            <img src="https://d33wubrfki0l68.cloudfront.net/ddc7dbebac8dc6b6e66095027e4334c224d352af/4499c/assets/site/quote.svg" alt="quotes image">
+                            <p class="testimonials_items_desc">
+                                I hired Michael to build my website for my small landscaping business. Our business is growing by double digits in large part to the superb website.
+                            </p>
+                            <p class="testimonials_items_name">Michael Verduyn</p>
+                            <a href="https://gobetterway.ca/" class="testimonials_items_link">
+                                <p>gobetterway.ca</p>
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 10" style="width: 0.75rem; stroke: currentColor;">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M2.50002 4.5L0.800021 6.205C0.412363 6.59249 0.412363 7.24051 0.800021 7.628L2.37202 9.205C2.75951 9.59266 3.40753 9.59266 3.79502 9.205L5.50002 7.5"></path>
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M7.5 5.50002L9.205 3.80002C9.591 3.41418 9.59458 2.76648 9.205 2.37702L7.628 0.800021C7.24051 0.412363 6.59249 0.412363 6.205 0.800021L4.5 2.50002"></path>
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.5 6.5L6.5 3.5"></path>
+                                </svg>
+                            </a>
+                        </article>
+                        <article class="testimonials_items">
+                            <picture>
+                                <img src="./images/customer2.png" alt="customer 2">
+                            </picture>
+                            <img src="https://d33wubrfki0l68.cloudfront.net/ddc7dbebac8dc6b6e66095027e4334c224d352af/4499c/assets/site/quote.svg" alt="quotes image">
+                            <p class="testimonials_items_desc">
+                                Creative, professional, and reliable. A keen eye for design, both in form and function. Very highly recommended!                            
+                            </p>
+                            <p class="testimonials_items_name">David Robinson</p>
+                            <a href="https://westminsterchapel.ca/" class="testimonials_items_link">
+                                <p>westminsterchapel.ca</p>
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 10" style="width: 0.75rem; stroke: currentColor;">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M2.50002 4.5L0.800021 6.205C0.412363 6.59249 0.412363 7.24051 0.800021 7.628L2.37202 9.205C2.75951 9.59266 3.40753 9.59266 3.79502 9.205L5.50002 7.5"></path>
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M7.5 5.50002L9.205 3.80002C9.591 3.41418 9.59458 2.76648 9.205 2.37702L7.628 0.800021C7.24051 0.412363 6.59249 0.412363 6.205 0.800021L4.5 2.50002"></path>
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.5 6.5L6.5 3.5"></path>
+                                </svg>
+                            </a>
+                        </article>
+                        <article class="testimonials_items">
+                            <picture>
+                                <img src="./images/customer3.png" alt="customer 3">
+                            </picture>
+                            <img src="https://d33wubrfki0l68.cloudfront.net/ddc7dbebac8dc6b6e66095027e4334c224d352af/4499c/assets/site/quote.svg" alt="quotes image">
+                            <p class="testimonials_items_desc">
+                                Michael was an absolute pleasure to work with. He listened to my website requirements, and designed a perfect site for us!
+                            </p>
+                            <p class="testimonials_items_name">Darren Nickerson</p>
+                            <a href="https://canada1carsales.ca/" class="testimonials_items_link">
+                                <p>canada1carsales.ca</p>
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 10" style="width: 0.75rem; stroke: currentColor;">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M2.50002 4.5L0.800021 6.205C0.412363 6.59249 0.412363 7.24051 0.800021 7.628L2.37202 9.205C2.75951 9.59266 3.40753 9.59266 3.79502 9.205L5.50002 7.5"></path>
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M7.5 5.50002L9.205 3.80002C9.591 3.41418 9.59458 2.76648 9.205 2.37702L7.628 0.800021C7.24051 0.412363 6.59249 0.412363 6.205 0.800021L4.5 2.50002"></path>
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.5 6.5L6.5 3.5"></path>
+                                </svg>
+                            </a>
+                        </article>
+                    </div>
+
+                    <div class="testimonials_rating">
+                        <p class="testimonials_rating_title">Five stars</p>
+                        <picture class="testimonials_rating_stars">
+                            <img src="./images/star.png" alt="stars">
+                            <img src="./images/star.png" alt="stars">
+                            <img src="./images/star.png" alt="stars">
+                            <img src="./images/star.png" alt="stars">
+                            <img src="./images/star.png" alt="stars">
+                        </picture>
+                        <p class="testimonials_rating_desc">Based on <span>8 reviews</span></p>
+                        <picture class="testimonials_rating_logo">
+                            <img src="./images/star_logo.png" alt="stars">
+                        </picture>
+                    </div>
+                </div>
+            </section>
+
+            <section id="blog" class="container" style="padding-bottom: 8rem !important;     padding-top: 4rem !important;">
+                <h3 class="section_subtitle" style="text-align: center;">Latest</h3>
+                <h2 class="section_title" style="margin-bottom: 6rem; text-align: center;">From the Blog</h2>
+
+                <div class="blog_main">
+                    <a href="javascript:void(0)" class="blog_main_link shadow-show">
+                        <picture>
+                            <img src="./images/blog1.png" alt="blog 1">
+                        </picture>
+                        <div class="blog_main_link_content">
+                            <h4 class="blog_main_link_content-title">3 Tips for Picking <span>The Right Web Designer</span></h4>
+                            <p>January 23rd, 2023</p>
+                        </div>
+                    </a>
+                    <a href="javascript:void(0)" class="blog_main_link shadow-show">
+                        <picture>
+                            <img src="./images/blog2.png" alt="blog 2">
+                        </picture>
+                        <div class="blog_main_link_content">
+                            <h4 class="blog_main_link_content-title">How To Lazy-load <span>Google Analytics</span></h4>
+                            <p>November 30th, 2022</p>
+                        </div>
+                    </a>
+                </div>
+                <a href="javascript:void(0)" class="blog_main_views">
+                    <p>View all</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" style="width: 0.75rem; stroke:currentColor">
+                        <path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"></path>
+                    </svg>
+                </a>
+            </section>
+
+            <section id="contact" class="container">
+                <div class="contact_wrapper">
+                <h3 class="section_subtitle" style="text-align: center;">Contact Me</h3>
+                <h2 class="section_title" style="margin-bottom: 6rem; text-align: center; font-size: 2.25rem; line-height: 2.5rem;">
+                    Got a project? Lets Talk!
+                </h2>
+                <div class="contact_main">
+                    <picture>
+                        <img src="https://d33wubrfki0l68.cloudfront.net/08410ce2cf34f129b7fd89cada11458fb69836bb/584bd/assets/site/mail.svg" alt="mail">
+                    </picture>
+
+                    <a href="mailto:hieuproxd123456@gmail.com">
+                        hieuproxd123456@gmail.com
+                    </a>
+                </div>
+                <div class="contact_footer">
+                    <a href="#"><i class="fa-brands fa-facebook fa-xl"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter fa-xl"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram fa-xl"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin-in fa-xl"></i></a>
+                </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="container">
+            <p>© 2023 Duy Hieu. All rights reserved.</p>
+        </footer>
+
+        <div class="cursor"></div>
+    </div>
+</body>
+</html>
