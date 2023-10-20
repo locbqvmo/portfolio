@@ -11,10 +11,12 @@ const btnToggle=$$('.button_menu-toggle')
 
 btnToggle[0].addEventListener('click',()=>{
     headerMobile.style.display='block'
+    headerMobile.style.position='fixed'
 })
 
 btnToggle[1].addEventListener('click',()=>{
     headerMobile.style.display='none'
+    headerMobile.style.position='absolute'
 })
 headerMobileContainer.addEventListener('click',()=>{
     headerMobile.style.display='none'
