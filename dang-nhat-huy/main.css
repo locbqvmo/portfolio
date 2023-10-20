@@ -18,6 +18,16 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+header,
+#portfolio,
+#skill {
+  padding-top: 2rem;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
 .flex {
   display: flex;
 }
@@ -28,6 +38,14 @@ body {
 
 .justify-center {
   justify-content: center;
+}
+
+h5 {
+  font-size: 1.25rem;
+}
+
+.cursor-pointer {
+  cursor: pointer;
 }
 
 .gap-4 {
@@ -41,6 +59,16 @@ h3 {
   font-size: 2.5rem;
   animation: bounce 1s infinite;
 }
+
+h4 {
+  font-size: 1.75rem;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+/* ====== HEADER =========== */
 
 .description {
   padding: 0.5rem 0;
@@ -114,37 +142,13 @@ h3 {
   background: rgba(209, 213, 219, 1);
 }
 
-@keyframes bounce {
-  0%,
-  100% {
-    transform: translateY(-25%);
-    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
-  }
-  50% {
-    transform: translateY(0);
-    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
-  }
-}
-
-footer,
-#portfolio,
-#skill {
-  padding-top: 2rem;
-}
-
-.cursor-pointer {
-  cursor: pointer;
-}
+/* ======= MAIN ========= */
 
 footer .ri-shining-fill {
   animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
 }
 footer .ri-shining-fill {
   font-size: 1.5rem;
-}
-
-h4 {
-  font-size: 2rem;
 }
 
 .social-icon {
@@ -165,6 +169,8 @@ h4 {
 .pb-2 {
   padding-bottom: 0.5rem;
 }
+
+/* ==== PORTFOLIO ====== */
 
 .portfolio-list {
   padding-top: 0.25rem;
@@ -196,6 +202,31 @@ h4 {
 .portfolio-link {
   text-decoration: none;
 }
+
+/* ==== Experience ===== */
+
+.experience-item {
+  gap: 20px;
+  padding-bottom: 1rem;
+}
+
+.experience-item__content {
+  flex-basis: 70%;
+}
+
+.experience-item__timeline {
+  white-space: nowrap;
+  font-weight: 300;
+  flex-basis: 20%;
+}
+
+.experience-item__title {
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+
+/* ==== Skills===== */
+
 .skill-list {
   gap: 0.5rem;
   flex-wrap: wrap;
@@ -217,10 +248,6 @@ h4 {
   color: white;
 }
 
-.justify-between {
-  justify-content: space-between;
-}
-
 .text-sm {
   font-size: 14px;
   color: #4b4b4b;
@@ -231,16 +258,21 @@ h4 {
   color: black;
 }
 
-h5 {
-  font-size: 1.25rem;
-}
-
 .social-icon:hover {
   background: #000;
   color: white;
 }
 
-.social-icon i {
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(-25%);
+    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+  }
+  50% {
+    transform: translateY(0);
+    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  }
 }
 
 @keyframes ping {
@@ -252,7 +284,20 @@ h5 {
 }
 
 /* ========= RESPONSIVE ========= */
+
 @media screen and (max-width: 700px) {
+  .experience-item {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .experience-item__timeline {
+    flex-basis: 100%;
+  }
+
+  .experience-item__content {
+    flex-basis: 100%;
+  }
   h3 {
     font-size: 2rem;
   }
