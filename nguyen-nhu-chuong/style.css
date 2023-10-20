@@ -1,12 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+NKo+Unjoined:wght@500&display=swap');
 
+:root {
+    --background-1: #000000;
+    --background-2: #1c2e35;
+    --background-3: #0b4a4f;
+    --white-blue: rgb(169, 255, 242);
+    --pink: #FDE8E9;
+    --light-gray: #d0c3c4;
+    --gray: #6e6e6e;
+    --sky-blue: rgb(161, 194, 240);
+    --deep-sky-blue: #007bb5;
+    --aquamarine: rgba(45, 212, 190, 0.519);
+    --blue: #3B5998;
+    --reddish-orange: #dd4b39;
+    --charcoal-gray: rgb(26, 26, 26);
+}
+
 body {
     height: 100%;
     margin: 0;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    /* background-image: linear-gradient(to right, #F02FC2, #8144fc, #458cff); */
-    background-image: linear-gradient(to right, #000000, #1c2e35, #0b4a4f);
+    background-image: linear-gradient(to right, var(--background-1), var(--background-2), var(--background-3));
     background-size: 400%, 400%;
     animation: background_gradient 6s linear 0s infinite none;
 }
@@ -18,7 +33,7 @@ body {
     100% {background-position: 0%, 50%;}
 }
 
-.container {
+header {
     display: flex;
     margin: 1rem 5% 0 5%;
     justify-content: space-around;
@@ -37,24 +52,24 @@ body {
 .intro-content {
     font-size: 25px;
     font-family: 'Noto Sans NKo Unjoined', sans-serif;
-    color: #a6eff9;
+    color: var(--white-blue);
 }
 
 h1 {
     font-size: 65px;
     font-family: 'Noto Sans NKo Unjoined', sans-serif;
-    color: rgb(169, 255, 242);
+    color: var(--white-blue);
     margin-bottom: 0;
 }
 
 h2 {
     font-size: 45px;
     font-family: 'Noto Sans NKo Unjoined', sans-serif;
-    color: rgb(169, 255, 242);
+    color: var(--white-blue);
 }
 
 .name, .profession {
-    color: #FDE8E9;
+    color: var(--pink);
 }
 
 /* Projects */
@@ -65,7 +80,7 @@ h2 {
 
 .projects h2, p {
     text-align: center;
-    color: #d0c3c4;
+    color: var(--light-gray);
     font-family: 'Noto Sans NKo Unjoined', sans-serif;
     margin-bottom: 0px;
     display: flex;
@@ -74,11 +89,11 @@ h2 {
 
 .projects-container {
     width: 90%;
-    padding: 5%;
+    padding: 5% 5% 0 5%;
 }
 
 .project {
-    border-bottom: 1px solid #6e6e6e;
+    border-bottom: 1px solid var(--gray);
     width: 100%;
     display: grid;
     grid-template-columns: 40% 20% 40%;
@@ -92,7 +107,7 @@ h2 {
     grid-column-end: 3;
     text-transform: uppercase;
     font-size: small;
-    color: rgb(161, 194, 240);
+    color: var(--sky-blue);
 }
 
 .project-info {
@@ -114,10 +129,16 @@ h2 {
     border: none;
 }
 
+.project img {
+    height: 180px;
+    width: auto;
+    margin: 0 auto;
+}
+
 .project-name {
     font-size: 26px;
     font-family: 'Noto Sans NKo Unjoined', sans-serif;
-    color: #f7f2f3;
+    color: white;
     margin: 0;
     width: inherit;
 }
@@ -141,7 +162,7 @@ h2 {
 
 .project-description {
     font-size: 12px;
-    color: #a6eff9;
+    color: var(--white-blue);
     align-self: stretch;
 }
 
@@ -157,8 +178,8 @@ h2 {
 .tech {
     padding: 4px 12px;
     border-radius: 12px;
-    color: rgb(169, 255, 242);
-    background-color: rgba(45, 212, 190, 0.519);
+    color: var(--white-blue);
+    background-color: var(--aquamarine);
     font-family: 'Noto Sans NKo Unjoined', sans-serif;
     font-size: 12px;
 }
@@ -168,11 +189,17 @@ h2 {
 .divider {
     margin: 20px auto;
     width: 65%; 
-    border-bottom: 1px solid #FDE8E9; 
+    border-bottom: 1px solid var(--pink); 
 }
 
 footer {
     padding: 20px 0 50px 0;
+    text-align: center;
+}
+
+footer h4 {
+    font-family: 'Noto Sans NKo Unjoined', sans-serif;
+    color: var(--pink);
 }
 
 .social-buttons-container {
@@ -191,8 +218,8 @@ footer {
     text-decoration: none;
     margin: 5px 15px;
     border-radius: 5px;
-    color: rgb(169, 255, 242);
-    background-color: rgba(45, 212, 190, 0.519);
+    color: var(--white-blue);
+    background-color: var(--aquamarine);
 }
 
 .fa-facebook:hover {
@@ -201,11 +228,11 @@ footer {
 
 @keyframes facebook-animation {
     from {
-        color: rgb(169, 255, 242);
-        background: rgba(45, 212, 190, 0.519);
+        color: var(--white-blue);
+        background: var(--aquamarine);
     }
     to {
-        background: #3B5998;
+        background: var(--blue);
         color: white;
     }
 }
@@ -216,11 +243,11 @@ footer {
 
 @keyframes google-animation {
     from {
-        color: rgb(169, 255, 242);
-        background: rgba(45, 212, 190, 0.519);
+        color: var(--white-blue);
+        background: var(--aquamarine);
     }
     to {
-        background: #dd4b39;
+        background: var(--reddish-orange);
         color: white;
     }
 }
@@ -231,11 +258,11 @@ footer {
 
 @keyframes linkedin-animation {
     from {
-        color: rgb(169, 255, 242);
-        background: rgba(45, 212, 190, 0.519);
+        color: var(--white-blue);
+        background: var(--aquamarine);
     }
     to {
-        background: #007bb5;
+        background: var(--deep-sky-blue);
         color: white;
     }
 }
@@ -246,19 +273,19 @@ footer {
 
 @keyframes github-animation {
     from {
-        color: rgb(169, 255, 242);
-        background: rgba(45, 212, 190, 0.519);
+        color: var(--white-blue);
+        background: var(--aquamarine);
     }
     to {
-        background: rgb(26, 26, 26);
+        background: var(--charcoal-gray);
         color: white;
     }
 }
 
 /* Tablet */
-@media only screen and (max-width: 992px) {
+@media (max-width: 992px) {
 
-    .container {
+    header {
         display: block;
     }
 
@@ -274,25 +301,29 @@ footer {
     .intro-content {
         font-size: 20px;
         font-family: 'Noto Sans NKo Unjoined', sans-serif;
-        color: #a6eff9;
+        color: var(--white-blue);
     }
     
     h1 {
         font-size: 55px;
         font-family: 'Noto Sans NKo Unjoined', sans-serif;
-        color: rgb(169, 255, 242);
+        color: var(--white-blue);
         margin-bottom: 0;
     }
     
     h2 {
         font-size: 38px;
         font-family: 'Noto Sans NKo Unjoined', sans-serif;
-        color: rgb(169, 255, 242);
+        color: var(--white-blue);
     }
 
     h3 {
         width: 80%;
         font-size: 15px;
+    }
+
+    .project img {
+        display: none;
     }
 
     .project-date {
@@ -323,27 +354,27 @@ footer {
 }
 
 /* Phone */
-@media only screen and (max-width: 600px) {
+@media (max-width: 600px) {
     .intro-content {
         font-size: 15px;
         font-family: 'Noto Sans NKo Unjoined', sans-serif;
-        color: #a6eff9;
+        color: var(--white-blue);
     }
     
     h1 {
         font-size: 45px;
         font-family: 'Noto Sans NKo Unjoined', sans-serif;
-        color: rgb(169, 255, 242);
+        color: var(--white-blue);
         margin-bottom: 0;
     }
     
     h2 {
         font-size: 28px;
         font-family: 'Noto Sans NKo Unjoined', sans-serif;
-        color: rgb(169, 255, 242);
+        color: var(--white-blue);
     }
 
-    .container {
+    header {
         display: block;
     }
 
